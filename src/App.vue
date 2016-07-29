@@ -1,11 +1,11 @@
-<template>
-  <div id="app">
-    <img class="logo" src="./assets/logo.png">
-    <hello></hello>
-    <p>
+<template lang="slm">
+  #app
+    img class="logo" src="./assets/logo.png"
+    hello
+    p
       Welcome to your Vue.js app!
-    </p>
-    <p>
+    p
+    p
       To get a better understanding of how this boilerplate works, check out
       <a href="http://vuejs-templates.github.io/webpack" target="_blank">its documentation</a>.
       It is also recommended to go through the docs for
@@ -19,46 +19,44 @@
       <a href="https://github.com/vuejs/vue-router/" target="_blank">vue-router</a> for routing and
       <a href="https://github.com/vuejs/vuex/" target="_blank">vuex</a> for state management.
     </p>
-  </div>
 </template>
 
-<script>
-import Hello from './components/Hello'
+<script lang="coffee">
+Hello = require('./components/Hello')
 
-export default {
+module.exports = {
   components: {
     Hello
   }
 }
+
+console.log 1
 </script>
 
-<style>
-html {
-  height: 100%;
-}
+<style lang="sass">
 
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
+html
+  height: 100%
 
-#app {
-  color: #2c3e50;
-  margin-top: -100px;
-  max-width: 600px;
-  font-family: Source Sans Pro, Helvetica, sans-serif;
-  text-align: center;
-}
+body
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 100%
 
-#app a {
-  color: #42b983;
-  text-decoration: none;
-}
+#app
+  color: #2c3e50
+  margin-top: -100px
+  max-width: 600px
+  font-family: Source Sans Pro, Helvetica, sans-serif
+  text-align: center
 
-.logo {
-  width: 100px;
+#app a
+  color: #42b983
+  text-decoration: none
+
+.logo
+  width: 100px
   height: 100px
-}
+
 </style>

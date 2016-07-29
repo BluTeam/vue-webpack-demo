@@ -41,6 +41,17 @@ module.exports = {
     ],
     loaders: [
       {
+        test: /\.coffee$/,
+        loader: 'coffee-loader'
+      },
+      {
+        test: /\.scss$/,
+        loader: 'style!css!sass?outputStyle=expanded&'
+      },
+      {
+        test: /\.html\.(slm|slim)/, loader: "slm"
+      },
+      {
         test: /\.vue$/,
         loader: 'vue'
       },
