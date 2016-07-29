@@ -1,4 +1,4 @@
-# a demo of vue-cli with webpack
+# A demo of vue-cli with webpack
 
 > Add coffee loader and slim loader to Webpack. Coding Vue-project like coding the View of Rails.
 
